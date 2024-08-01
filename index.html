@@ -17,12 +17,14 @@
       integrity="sha384-wEmeIv5g9kSXvE1DR3yn9h67zV8ewCTk9O5K1ATraWOAFb5FnQ8aJgDXCxfGcsb6"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="container" id="home">
+      <div class="container">
         <a class="navbar-brand" href="#">MyAcademiaHub</a>
         <button
           class="navbar-toggler"
@@ -44,22 +46,22 @@
               <a class="nav-link" href="#categories">Categories</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#mission">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
-    <div class="container my-5 py-5" id="introduction">
-      <div class="jumbotron bg-light border border-primary rounded text-center">
-        <h1 class="display-4">Educational Resource Hub</h1>
-        <p class="lead">
-          Your go-to platform for various educational resources
-        </p>
+    <div id="home">
+      <div class="container my-5 py-5" id="introduction">
+        <div class="jumbotron bg-light border border-primary rounded text-center">
+          <h1 class="display-4">Educational Resource Hub</h1>
+          <p class="lead">
+            Your go-to platform for various educational resources
+          </p>
+        </div>
       </div>
     </div>
-
     <!-- Featured Resources Section -->
     <div class="container my-5" id="featured">
       <h2 class="text-center mb-4">Featured Resources</h2>
@@ -157,49 +159,51 @@
     </div>
 
     <!-- Categories Section -->
-    <div class="container my-5" id="categories-section">
-      <h2 class="text-center mb-4">Categories</h2>
-      <div class="row" id="categories">
-        <div class="col-lg-4 mb-4">
-          <div class="category-box">
-            <h3 class="category-title">Java Programming</h3>
-            <p class="category-description">
-              Deep dive into Java programming concepts, tutorials, and best
-              practices. Whether you're a beginner or an experienced developer,
-              find all you need to excel in Java.
-            </p>
-            <a href="#" class="category-link">Explore Java</a>
+    <div id="categories-section">
+      <div class="container my-5" id="categories">
+        <h2 class="text-center mb-4">Categories</h2>
+        <div id="resources" class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="category-box">
+              <h3 class="category-title">Java Programming</h3>
+              <p class="category-description">
+                Deep dive into Java programming concepts, tutorials, and best
+                practices. Whether you're a beginner or an experienced
+                developer, find all you need to excel in Java.
+              </p>
+              <a href="#" class="category-link">Explore Java</a>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="category-box">
-            <h3 class="category-title">Python Programming</h3>
-            <p class="category-description">
-              Discover Python programming resources, from introductory guides to
-              advanced techniques. Perfect for all skill levels to enhance your
-              Python expertise.
-            </p>
-            <a href="#" class="category-link">Explore Python</a>
+          <div class="col-lg-4 mb-4">
+            <div class="category-box">
+              <h3 class="category-title">Python Programming</h3>
+              <p class="category-description">
+                Discover Python programming resources, from introductory guides
+                to advanced techniques. Perfect for all skill levels to enhance
+                your Python expertise.
+              </p>
+              <a href="#" class="category-link">Explore Python</a>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="category-box">
-            <h3 class="category-title">Computer Networking</h3>
-            <p class="category-description">
-              Explore the fundamentals and advanced topics of computer
-              networking. Learn about protocols, networking tools, and how to
-              build and manage networks.
-            </p>
-            <a href="#" class="category-link">Explore Networking</a>
+          <div class="col-lg-4 mb-4">
+            <div class="category-box">
+              <h3 class="category-title">Computer Networking</h3>
+              <p class="category-description">
+                Explore the fundamentals and advanced topics of computer
+                networking. Learn about protocols, networking tools, and how to
+                build and manage networks.
+              </p>
+              <a href="#" class="category-link">Explore Networking</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- About Section -->
-    <div class="container my-5" id="mission">
+    <div class="container my-5" id="about">
       <h2 class="text-center mb-4">About Us</h2>
-      <p class="text-center mb-5">
+      <p class="text-center mb-5" id="mission">
         We are dedicated to providing high-quality educational resources to help
         you achieve your learning goals. Whether you're interested in
         programming, networking, or other technical fields, we have resources
